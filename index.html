@@ -1,72 +1,53 @@
 <html>
 	
-	<a href="second.html">click here to go to the second page</a>
-	
 	<head>
-		<title>This is my webpage</title>
+		<title>Whisky Society St Andrews</title>
+		<style>
+			header {
+      				text-align: center;
+      				background: url('http://www.whiskyandale.com.au/wp-content/uploads/2014/11/Alba-Whisky-Glencairn-Whisky-Glass-6-Glasses-1024x640.jpg');
+      				background-size: cover;
+      				background-position: center;
+      				color: white;
+      				font-family: helvetica;
+    			}
+
+    			h1 {
+    				padding: 50px 50px 50px 50px;
+    			}
+			
+			ul {
+				background: rgba(255,255,255,0.2);
+				padding: 100px 20px 100px 20px;
+			}
+
+			li {
+				display: inline;
+				color: white;
+			}
+
+		</style>
 	</head>
 	<body>
-		<h1>My Title</h1>
-		<h2>My Sub-title</h2>
-
-		<p>My paragraph - text text text <strong>text text text text</strong> text text text <em>text text text text</em> text text text <u>text text text text</u> text text</p>
-		<p>My paragraph 2</p>
-		<p>My paragraph 3</p>
-
-		<h3>Unordered List</h3>
-		<ul style="list-style-type:square">
-			<li>Coffee</li>
-			<li>Tea</li>
-			<li>Milk</li>
-		</ul>
-
-		<h3>Ordered List</h3>
-		<ol>
-			<li>Pancakes</li>
-			<li>Hot Chocolate</li>
-			<li>Nutella</li>
-		</ol>
+		<header>
+			<button>Like</button>
+			<img src="">
+			<h1>Whisky Society St Andrews</h1>
+			<ul>
+				<li><a href="second.html">About us</a></li>
+				<li><a href="#">Membership</a></li>
+				<li><a href="#">The Committee</a></li>
+				<li><a href="#">Contact us</a></li>
+			</ul>
+		</header>
+		<script>
+			$("button").on("click", function() {alert("clicked!") });
+		</script>
 
 		<form>
-			Usename: <input type="text" /><br/>
-			Password: <input type="password" /><br/>
-			Gender:
-				<input type="radio" name="g">M
-				<input type="radio" name="g">F<br/>
 			I am over 18
 				<input type="checkbox" /><br/>
-			Submit information <input type="button" value="Click Me" /><br/>
 		</form>
 
-		<table border="1" width=80%>
-			<thead>
-				<tr>
-					<th><strong>Number</strong></th>
-					<th><strong>First Name</strong></th>
-					<th><strong>Last Name</strong></th>
-					<th><strong>Points</strong></th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>One</td>
-					<td>Tom</td>
-					<td>Newman</td>
-					<td>95</td>
-				</tr>
-				<tr>
-					<td>Two</td>
-					<td>Lewis</td>
-					<td>Jackson</td>
-					<td>29</td>
-				</tr>
-				<tr>
-					<td>Three</td>
-					<td>Molly</td>
-					<td>Morris</td>
-					<td>22</td>
-				</tr>
-			</tbody>
-		</table>
 	</body>
 </html>
