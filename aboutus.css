@@ -1,7 +1,7 @@
 .title {
   color: white;
 }
-header {
+header, footer {
       				text-align: center;
       				background: rgba(0,0,0,0.8);
       				
@@ -31,6 +31,12 @@ header {
         padding: 20px 20px 20px 20px;
 			}
 
+footer {
+  margin-bottom: 20px;
+  position: static;
+  bottom: 0;
+}
+
 a {
   color: white;
 }
@@ -40,7 +46,7 @@ body {
   background-image:url("http://i.telegraph.co.uk/multimedia/archive/02452/whisky_2452205b.jpg");;
   background-size: cover;
   text-align: left;
-
+  max-width: 1500px;
 }
 
 .stuff {
@@ -50,9 +56,62 @@ body {
   max-width: 100%;
 }
 
-.img1 {
-  max-width: 20px;
-  max-height: auto;
+.comstuff, .img1 {
+  display: inline-block;
+}
+
+.comstuff {
+  background: rgba(10,10,10,0.8);
+  background-size: 100px 50px;
+  color: white;
+  max-width: 100%;
   position: relative;
-  padding: 0px 0px 0px 300px;
+  text-align: left;
+  float: top;
+}
+
+.img1 {
+  position: relative;
+  text-align: right;
+/*  right: -700px;*/
+ /* padding: 0px 0px 0px 700px;*/
+}
+
+input[type=text] {
+    padding:5px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type=text]:focus {
+    border-color:#333;
+}
+
+input[type=submit] {
+  min-height:30px;
+  margin-top:10px;
+  margin-bottom: 10px;
+  width:100px;
+  /*padding:5px 15px; */
+  background: rgba(59, 89, 152, 1); 
+  border:0 none;
+  cursor:pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; 
+}
+
+.first {
+  max-width: 500px;
+  position: left;
+}
+
+.second {
+  max-width: 500px;
+  position: right;
+}
+
+.first, .second {
+  display: inline-block;
+
 }
