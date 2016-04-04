@@ -1,5 +1,5 @@
 <html>
-	
+	<div class="eve">
 	<head>
 		<link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
 		<link rel='stylesheet' type='text/css' href='index.css'>
@@ -11,27 +11,26 @@
 	<body>
 		<header>
 			
-			<button>Like</button>
+		
 			<h1 class="title" id="page_header">Whisky Quaich Society St Andrews</h1>
 			<!--<img src="http://www.whiskyandale.com.au/wp-content/uploads/2014/11/Alba-Whisky-Glencairn-Whisky-Glass-6-Glasses-1024x640.jpg">-->
 			
-			<ul>
-				<li><a href="second.html">About Us</a></li>
-				<li><a href="third.html">Membership</a></li>
-				<li><a href="fourth.html">Future Events</a></li>
-				<li><a href="#">Past Events</a></li>
-				<li><a href="#">Committee</a></li>
-				<li><a href="#">Contact Us</a></li>
-			</ul>
+
 		</header>
 		<script>
 			$("button").on("click", function() {alert("clicked!") });
 		</script>
-
-		<form>
-			I am over 18
-				<input type="checkbox" /><br/>
-		</form>
-
+		<div class="all">
+		<h2>Are you of legal drinking age in your country of residence?</h2>
+		<ul>
+			<li>
+				<input style="display: inline;" type="button" value="Yes" onclick="window.location='aboutus.html'" />
+			</li>
+			<li>
+				<input style="display: inline;" type="button" value="No" onclick="window.location='http://responsibility.org'"/>
+			</li>
+		</ul>
+		</div>
 	</body>
+</div>
 </html>
