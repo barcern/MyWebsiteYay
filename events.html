@@ -98,7 +98,12 @@
 			</div>
 		</div>
 		<script>
-		  $("stuff").click(function(){
+		  $("first").click(function(){
+		    $("p, small").toggleClass("show-description");
+		  });
+		</script>
+		<script>
+		  $("second").click(function(){
 		    $("p, small").toggleClass("show-description");
 		  });
 		</script>
