@@ -115,3 +115,15 @@ input[type=submit] {
   display: inline-block;
 
 }
+@media (max-width: 500px) {
+  h1 {
+    font-size: 36px;
+  }
+  li {
+    display: block;
+    padding: 5px;
+  }
+  body {
+    background: rgb(105,105,105);
+  }
+}
