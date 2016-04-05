@@ -1,124 +1,107 @@
- <html>
- -<div class="eve">
- -	<head>
- +
- +<head>
- +		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
- +		<style>
- +/*	p {
- +	  color: rgba(255,255,255,1);
- +	  background: black;
- +	  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
- +	  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
- +	  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
- +	  padding: 10px;
- +	  line-height: 30px;
- +	  text-align: justify;
- +	  position: absolute;
- +	  bottom: 0;
- +	  margin: 0;
- +	  transition: height .5s;
- +	  -webkit-transition: height .5s;
- +	  -moz-transition: height .5s;
- +	} */
- +	small {
- +		  opacity: 0;
- +		}
- +		.show-description p {
- +		   height: 150px;
- +		}
- +		.show-description small {
- +		  opacity: 1;
- +}
- +	.first {
- +		background-image: url("http://i.imgur.com/mCT8hIv.jpg?1");
- +	}
- +	.second {
- +		background-image: url("http://i.imgur.com/V2YmYiK.png?1");
- +	}
- +	.price {
- +		float: right;
- +	}
- +/*	@media {
- +  h1 {
- +    font-size: 50px;
- +    margin-top: 20px;
- +    line-height: 40px;
- +  }
- +  h2 {
- +    font-size: 20px;
- +    margin-top: 20px;
- +    margin-bottom: 30px;
- +  }
- +  div {
- +    margin: 20px 12px 0 12px;
- +  }
- +  p {
- +    font-size: 20px;
- +    line-height: 24px;
- +  }
- +  small {
- +    font-size: 16px;
- +  }
- +} */
- +</style>
-  		<link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
-  		<link rel='stylesheet' type='text/css' href='aboutus.css'>
- -		<title>About Us - Whisky Society St Andrews</title>
- +		<title>Events - Whisky Society St Andrews</title>
-  		<style>
-  			
-  		</style>
-  	</head>
- -
-  	<body>
-  		<header>
-  			<h1 class="title" id="page_header">Whisky Quaich Society St Andrews</h1>
- @@ -21,27 +79,29 @@ <h1 class="title" id="page_header">Whisky Quaich Society St Andrews</h1>
-  				<li><a href="contactus.html">Contact Us</a></li>
-  			</ul>
-  		</header>
- -		<div class="stuff">
- -			<h2>About Us</h2>
- -			<p>A great way to sample wonderful whiskies even on a student budget. We invite professional Brand Ambassadors to host tastings every second week throughout the semester - never with fewer than five drams! Events are friendly and informal gatherings. See our page for details and come along!</p>
- -			<h3>Meetings</h3>
- -			<p>We meet every other Thursday at Hotel du Vin and welcome everyone - whether you are a whisky expert or have never tried it before, feel free to join us and see what we are about! </p>
- -			<h3>Membership</h3>
- -			<p>Membership is £15. This gets you entry to each of our tastings for only £5 (non-members pay £10), as well as a 7.5% discount at Luvians and a complimentary Glencairn tasting glass worth at least £6.</p>
- +		<div class="stuff" height="200px">
- +			<h2>Events</h2>
- +			<p></p>
- +			<div class="first">
- +				<!-- <img src="http://i.imgur.com/mCT8hIv.jpg?1"> -->
- +				<p>Next Tasting <span class="price">Tomatin 14.4. at Hotel du Vin</span>
- +  <small>Tomatin is a gem of a distillery, located a little south of Inverness. The name translates as ‘Hill of the Juniper Bush’, but do not think too much of gin – the wood giving off no smoke, the distillery claims these plants were frequently used for illicit distillation before the distillery was founded. </small></p>
- +			</div>
- +			<div class="second">
- +				<!-- <img src="http://i.imgur.com/V2YmYiK.png?1"> -->
- +				<p>Last Tasting <span class="price">Diageo 31.3. at Hotel du Vin</span><br />
- +  <small>Known as United Distillers until 1998, Diageo manages a host of big name brands – from Smirnoff to Baileys. It’s the whisky we care about, however, and in this they are probably best known for the 12 distilleries that make up the Classic Malts range. </small></p>
- +			</div>
-  		</div>
- +		<script>
- +		  $("first").click(function(){
- +		    $("p, small").toggleClass("show-description");
- +		  });
- +		</script>
-  		<footer>
- -			<!--<form action="https://www.facebook.com/QuaichSoc/">
- +			<form action="https://www.facebook.com/QuaichSoc/">
-  				<input type="submit" value="Facebook Page"/>
- -			</form>-->
- -			<p> Follow us on Social Media! </p>
- -
- -			<a href="https://www.facebook.com/QuaichSoc/"><img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="facebook"
- -			style="width:30px;height:30px;"></a>
- -
- -	        	<a href="https://twitter.com/stawhiskysoc"><img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-128.png" alt="Twitter" style="width:30px;height:30px;"</a>
- -
- -			 <a href="mailto:quaichmail@st-andrews.ac.uk"><img src="http://www.androidpolice.com/wp-content/uploads/2013/09/nexusae0_gmail.png" alt="Email" style="width:30px;height:30px;"</a>
- +			</form>
-  		</footer>
-  	</body>
- -</div>
-  </html>
+<html>
+
+<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<style>
+/*	p {
+	  color: rgba(255,255,255,1);
+	  background: black;
+	  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+	  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+	  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+	  padding: 10px;
+	  line-height: 30px;
+	  text-align: justify;
+	  position: absolute;
+	  bottom: 0;
+	  margin: 0;
+	  transition: height .5s;
+	  -webkit-transition: height .5s;
+	  -moz-transition: height .5s;
+	} */
+	small {
+		  opacity: 0;
+		}
+		.show-description p {
+		   height: 150px;
+		}
+		.show-description small {
+		  opacity: 1;
+}
+	.first {
+		background-image: url("http://i.imgur.com/mCT8hIv.jpg?1");
+	}
+	.second {
+		background-image: url("http://i.imgur.com/V2YmYiK.png?1");
+	}
+	.price {
+		float: right;
+	}
+/*	@media {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+} */
+</style>
+		<link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+		<link rel='stylesheet' type='text/css' href='aboutus.css'>
+		<title>Events - Whisky Society St Andrews</title>
+		<style>
+			
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1 class="title" id="page_header">Whisky Quaich Society St Andrews</h1>
+			<!--<img src="http://www.whiskyandale.com.au/wp-content/uploads/2014/11/Alba-Whisky-Glencairn-Whisky-Glass-6-Glasses-1024x640.jpg">-->
+			
+			<ul>
+				<li><a href="aboutus.html">About Us</a></li>
+				<li><a href="events.html">Events</a></li>
+				<li><a href="committee.html">Committee</a></li>
+				<li><a href="contactus.html">Contact Us</a></li>
+			</ul>
+		</header>
+		<div class="stuff" height="200px">
+			<h2>Events</h2>
+			<p></p>
+			<div class="first">
+				<!-- <img src="http://i.imgur.com/mCT8hIv.jpg?1"> -->
+				<p>Next Tasting <span class="price">Tomatin 14.4. at Hotel du Vin</span>
+  <small>Tomatin is a gem of a distillery, located a little south of Inverness. The name translates as ‘Hill of the Juniper Bush’, but do not think too much of gin – the wood giving off no smoke, the distillery claims these plants were frequently used for illicit distillation before the distillery was founded. </small></p>
+			</div>
+			<div class="second">
+				<!-- <img src="http://i.imgur.com/V2YmYiK.png?1"> -->
+				<p>Last Tasting <span class="price">Diageo 31.3. at Hotel du Vin</span><br />
+  <small>Known as United Distillers until 1998, Diageo manages a host of big name brands – from Smirnoff to Baileys. It’s the whisky we care about, however, and in this they are probably best known for the 12 distilleries that make up the Classic Malts range. </small></p>
+			</div>
+		</div>
+		<script>
+		  $("first").click(function(){
+		    $("p, small").toggleClass("show-description");
+		  });
+		</script>
+		<footer>
+			<form action="https://www.facebook.com/QuaichSoc/">
+				<input type="submit" value="Facebook Page"/>
+			</form>
+		</footer>
+	</body>
+</html>
