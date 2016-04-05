@@ -1,8 +1,9 @@
 <html>
 
 <head>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="/assets/jquery.js"></script>
 		<style>
+
 /*	p {
 	  color: rgba(255,255,255,1);
 	  background: black;
@@ -18,7 +19,7 @@
 	  transition: height .5s;
 	  -webkit-transition: height .5s;
 	  -moz-transition: height .5s;
-	} */
+	}*/
 	small {
 		  opacity: 0;
 		}
@@ -31,13 +32,16 @@
 	.first {
 		background-image: url("http://i.imgur.com/mCT8hIv.jpg?1");
 	}
+
 	.second {
 		background-image: url("http://i.imgur.com/V2YmYiK.png?1");
 	}
+
 	.price {
 		float: right;
 	}
-/*	@media {
+
+	@media {
   h1 {
     font-size: 50px;
     margin-top: 20px;
@@ -46,10 +50,10 @@
   h2 {
     font-size: 20px;
     margin-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
   div {
-    margin: 20px 12px 0 12px;
+    margin: 20px 12px 50px 12px;
   }
   p {
     font-size: 20px;
@@ -58,7 +62,7 @@
   small {
     font-size: 16px;
   }
-} */
+} 
 </style>
 		<link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
 		<link rel='stylesheet' type='text/css' href='aboutus.css'>
@@ -79,12 +83,12 @@
 				<li><a href="contactus.html">Contact Us</a></li>
 			</ul>
 		</header>
-		<div class="stuff" height="200px">
+		<div class="stuff">
 			<h2>Events</h2>
 			<p></p>
 			<div class="first">
 				<!-- <img src="http://i.imgur.com/mCT8hIv.jpg?1"> -->
-				<p>Next Tasting <span class="price">Tomatin 14.4. at Hotel du Vin</span>
+				<p>Next Tasting <span class="price">Tomatin 14.4. at Hotel du Vin</span><br />
   <small>Tomatin is a gem of a distillery, located a little south of Inverness. The name translates as ‘Hill of the Juniper Bush’, but do not think too much of gin – the wood giving off no smoke, the distillery claims these plants were frequently used for illicit distillation before the distillery was founded. </small></p>
 			</div>
 			<div class="second">
@@ -94,8 +98,8 @@
 			</div>
 		</div>
 		<script>
-		  $("first").click(function(){
-		    $("p, small").toggleClass("show-description");
+		  $("first").click(function() {
+		    $("p").toggleClass("small");
 		  });
 		</script>
 		<footer>
