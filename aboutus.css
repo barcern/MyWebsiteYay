@@ -32,9 +32,13 @@ header, footer {
 			}
 
 footer {
-  margin-bottom: 20px;
-  position: static;
   bottom: 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  text-align: center;
 }
 
 a {
@@ -116,7 +120,7 @@ input[type=submit] {
 
 }
 
-@media (max-width: 500px) {
+@media only screen and (max-width: 500px) {
   h1 {
     font-size: 36px;
   }
@@ -125,6 +129,10 @@ input[type=submit] {
     padding: 5px;
   }
   body {
-    background: red;
+    background: #696969;
+  }
+  footer {
+  	position: relative;
+  }
   }
 }
